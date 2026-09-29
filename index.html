@@ -3,34 +3,101 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>カラダナビ 法務情報</title>
+  <title>カラダナビ サポート</title>
+  <meta name="description" content="考えなくていい、毎日の運動プラン。カラダナビの使い方、よくある質問、お問い合わせ先。">
   <style>
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
     body { margin: 0; background: #000; color: #f2f2f7; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; }
     main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
-    h1, h2 { color: #FF375F; line-height: 1.35; }
-    h1 { font-size: clamp(1.8rem, 7vw, 2.5rem); margin: 0 0 8px; }
-    h2 { font-size: 1.2rem; margin-top: 36px; }
+    header { display: flex; align-items: center; gap: 16px; }
+    header img { width: 72px; height: 72px; border-radius: 16px; }
+    h1, h2 { line-height: 1.35; }
+    h1 { font-size: clamp(1.8rem, 7vw, 2.4rem); margin: 0; }
+    .tagline { color: #ff6482; font-weight: 700; margin: 4px 0 0; }
+    h2 { color: #FF375F; font-size: 1.25rem; margin-top: 40px; }
     p { margin: 12px 0; }
-    .updated { color: #aeaeb2; font-size: .9rem; }
-    nav { display: grid; gap: 12px; margin: 32px 0; }
+    ul { padding-left: 1.2em; }
+    .cards { display: grid; gap: 12px; margin: 24px 0; }
+    .card { padding: 16px; border: 1px solid #3a3a3c; border-radius: 14px; background: #1c1c1e; }
+    .card strong { display: block; color: #fff; }
+    details { border-bottom: 1px solid #2c2c2e; padding: 12px 0; }
+    summary { cursor: pointer; font-weight: 700; }
+    summary:focus-visible, a:focus-visible { outline: 3px solid #FF375F; outline-offset: 3px; }
     a { color: #ff6482; }
-    nav a { display: block; padding: 16px; border: 1px solid #3a3a3c; border-radius: 14px; background: #1c1c1e; color: #f2f2f7; font-weight: 700; text-decoration: none; }
-    nav a:focus-visible { outline: 3px solid #FF375F; outline-offset: 3px; }
+    nav { display: grid; gap: 12px; margin: 16px 0; }
+    nav a { display: block; padding: 14px 16px; border: 1px solid #3a3a3c; border-radius: 14px; background: #1c1c1e; color: #f2f2f7; font-weight: 700; text-decoration: none; }
+    .muted { color: #aeaeb2; font-size: .9rem; }
   </style>
 </head>
 <body>
   <main>
-    <h1>カラダナビ</h1>
-    <p class="updated">最終更新日：2026年9月28日</p>
-    <p>iPhone・Apple Watch向けアプリ「カラダナビ」の利用規約とプライバシーポリシーです。</p>
+    <header>
+      <img src="icon.png" alt="カラダナビのアイコン">
+      <div>
+        <h1>カラダナビ</h1>
+        <p class="tagline">考えなくていい、毎日の運動プラン</p>
+      </div>
+    </header>
+
+    <p>「何を・どれだけ・どこで」運動するかを、アプリが毎日決めます。自分でプランを立てるのが苦手な人、歩くルートを考えるのが面倒な人のための運動アプリです。</p>
+
+    <div class="cards">
+      <div class="card"><strong>開くだけで、今日のメニュー</strong>これまでの運動の記録とヘルスケアの睡眠から、その日の量を調整します。Apple Watch があれば、心拍や皮膚温も加えてより細かく判定します。</div>
+      <div class="card"><strong>目標から逆算した、今週のプラン</strong>目標体重とペースを決めると、今週の有酸素運動の時間と筋トレの回数を計算します。</div>
+      <div class="card"><strong>散歩ルートと天気</strong>今日の天気から歩ける時間を判定し、近くの公園を通って戻るルートを提案します。雨の日は家でできるメニューに切り替えます。</div>
+    </div>
+
+    <h2>動作環境</h2>
+    <ul>
+      <li>iPhone（iOS 27 以降）。Apple Watch がなくても使えます</li>
+      <li>Apple Watch（watchOS 27 以降）はあればより便利です（記録・心拍の表示、調子の判定の精度）</li>
+    </ul>
+
+    <h2>よくある質問</h2>
+    <details>
+      <summary>Apple Watch がなくても使えますか？</summary>
+      <p>使えます。今日のメニュー、週のプラン、散歩ルート、記録は iPhone だけで使えます。調子の判定は、Apple Watch がない場合、これまでの運動の記録とヘルスケアの睡眠をもとに行います。</p>
+    </details>
+    <details>
+      <summary>無料で使える範囲と、プレミアムの違いは？</summary>
+      <p>無料版では、記録・履歴、3D の種目解説、曜日ごとの基本メニュー、体重のグラフが使えます。プレミアム（月額480円・年額3,800円、1か月の無料体験つき）では、調子に合わせた今日のおすすめ、目標から逆算した週のプラン、天気と散歩ルート、雨の日の自動切り替えが使えます。</p>
+    </details>
+    <details>
+      <summary>解約するには？</summary>
+      <p>iPhone の「設定」アプリ → 自分の名前 →「サブスクリプション」→「カラダナビ」から解約できます。無料体験中に解約すれば料金はかかりません。期間の終了24時間前までに解約しない限り、自動で更新されます。</p>
+    </details>
+    <details>
+      <summary>機種変更したら、購入は引き継げますか？</summary>
+      <p>同じ Apple ID でサインインし、アプリの「設定」→「購入を復元」を押してください。</p>
+    </details>
+    <details>
+      <summary>健康データはどこかに送られますか？</summary>
+      <p>送りません。健康データは端末の中だけで扱います。天気と散歩ルートのために、現在地だけを Apple のサービス（WeatherKit・マップ）に送ります。広告や解析のツールは入っていません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+    </details>
+    <details>
+      <summary>ヘルスケアのデータが表示されません</summary>
+      <p>「ヘルスケア」アプリ →（右上の人のアイコン）→「アプリ」→「カラダナビ」で、読み取りを許可してください。アプリの「設定」に「ヘルスケアの追加項目を確認する」が出ている場合は、押して許可してください。</p>
+    </details>
+    <details>
+      <summary>天気や散歩ルートが出ません</summary>
+      <p>プレミアムで、アプリの「設定」の「天気と散歩ルートを使う」がオンになっているか、位置情報が「使用中のみ許可」になっているかを確認してください。</p>
+    </details>
+    <details>
+      <summary>運動してよいか不安です</summary>
+      <p>カラダナビは医療機器ではなく、診断や治療を目的としたものではありません。持病のある方や運動に不安のある方は、始める前に医師にご相談ください。運動中に胸の痛み・めまい・息苦しさなどを感じたら、すぐに中止してください。</p>
+    </details>
+
+    <h2>お問い合わせ</h2>
+    <p>ご意見・不具合のご報告は、メールでお送りください。</p>
+    <p>運営者：カラダナビ運営事務局<br>メール：<a href="mailto:karadanavi.support@gmail.com">karadanavi.support@gmail.com</a></p>
+
+    <h2>規約とポリシー</h2>
     <nav aria-label="法務文書">
       <a href="terms.html">利用規約</a>
       <a href="privacy.html">プライバシーポリシー</a>
     </nav>
-    <h2>問い合わせ先</h2>
-    <p>運営者：カラダナビ運営事務局<br>メール：<a href="mailto:karadanavi.support@gmail.com">karadanavi.support@gmail.com</a></p>
+    <p class="muted">最終更新日：2026年9月29日</p>
   </main>
 </body>
 </html>
