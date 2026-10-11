@@ -3,27 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>カラダナビ サポート</title>
-  <meta name="description" content="考えなくていい、毎日の運動プラン。カラダナビの使い方、よくある質問、お問い合わせ先。">
+  <title>カラダナビ - 今日の運動と散歩ルート｜iPhone アプリ</title>
+  <meta name="description" content="カラダナビは、開くだけで今日の運動と散歩ルートが決まる iPhone アプリです。天気に合わせた散歩ルート、目標から逆算した今週のプラン。iPhone だけで使えます。">
+  <meta name="google-site-verification" content="EvMvs8RO5dXW1FtLMoumwyqunw7ef7l6_yYHZb32z4k">
+  <link rel="canonical" href="https://andy0911.github.io/karadanavi-legal/">
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <meta name="apple-itunes-app" content="app-id=6816589095">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="カラダナビ">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="カラダナビ - 今日の運動と散歩ルート｜iPhone アプリ">
+  <meta property="og:description" content="天気に合わせた散歩ルートと、目標から逆算した今週のプラン。iPhone だけで使える運動アプリです。">
+  <meta property="og:image" content="https://andy0911.github.io/karadanavi-legal/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="カラダナビ - 今日の運動と散歩ルート｜iPhone アプリ">
+  <meta property="og:url" content="https://andy0911.github.io/karadanavi-legal/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="カラダナビ - 今日の運動と散歩ルート｜iPhone アプリ">
+  <meta name="twitter:description" content="天気に合わせた散歩ルートと、目標から逆算した今週のプラン。iPhone だけで使える運動アプリです。">
+  <meta name="twitter:image" content="https://andy0911.github.io/karadanavi-legal/ogp.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "カラダナビ - 今日の運動と散歩ルート",
+    "alternateName": "カラダナビ",
+    "description": "開くだけで今日の運動と散歩ルートが決まる iPhone アプリ。天気に合わせた散歩ルートと、目標から逆算した今週のプランを用意します。ダウンロードは無料で、プレミアムは月額480円または年額3,800円（日本の価格）。",
+    "operatingSystem": "iOS 27 以降",
+    "applicationCategory": "HealthApplication",
+    "inLanguage": "ja",
+    "url": "https://andy0911.github.io/karadanavi-legal/",
+    "image": "https://andy0911.github.io/karadanavi-legal/icon.png",
+    "screenshot": [
+      "https://andy0911.github.io/karadanavi-legal/screen-today.png",
+      "https://andy0911.github.io/karadanavi-legal/screen-route.png"
+    ],
+    "installUrl": "https://apps.apple.com/jp/app/id6816589095",
+    "author": { "@type": "Organization", "name": "カラダナビ運営事務局" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY", "url": "https://apps.apple.com/jp/app/id6816589095" }
+  }
+  </script>
+
+  <!-- Google アナリティクス（GA4）。計測 ID は公開前に実際の値へ差し替える -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXVB65NZD9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-MXVB65NZD9');
+  </script>
+
   <style>
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
     body { margin: 0; background: #000; color: #f2f2f7; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; }
     main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
     header { display: flex; align-items: center; gap: 16px; }
-    header img { width: 72px; height: 72px; border-radius: 16px; }
+    header img { width: 72px; height: 72px; border-radius: 16px; flex: none; border: 1px solid #3a3a3c; }
+    .skip { position: absolute; left: 16px; top: -64px; padding: 10px 16px; border-radius: 14px; background: #ff375f; color: #000; font-weight: 700; text-decoration: none; }
+    .skip:focus { top: 16px; z-index: 1; }
+    .premise { margin: 16px 0; padding: 12px 16px; border-left: 4px solid #ff375f; background: #1c1c1e; border-radius: 0 12px 12px 0; font-weight: 700; }
     h1, h2 { line-height: 1.35; }
-    h1 { font-size: clamp(1.8rem, 7vw, 2.4rem); margin: 0; }
-    .tagline { color: #ff6482; font-weight: 700; margin: 4px 0 0; }
-    h2 { color: #FF375F; font-size: 1.25rem; margin-top: 40px; }
+    h1 { margin: 0; font-size: 1rem; font-weight: 700; }
+    h1 .brand { display: block; font-size: clamp(1.8rem, 7vw, 2.4rem); color: #fff; }
+    h1 .lead { display: block; margin-top: 4px; color: #ff6482; font-size: 1rem; line-height: 1.5; }
+    h2 { color: #ff375f; font-size: 1.25rem; margin-top: 40px; }
     p { margin: 12px 0; }
     ul { padding-left: 1.2em; }
+    .cta { display: flex; align-items: center; justify-content: center; width: 100%; max-width: 360px; min-height: 56px; margin: 24px 0 8px; padding: 0 24px; border-radius: 14px; background: #ff375f; color: #000; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+    .cta:active { opacity: .8; }
+    .cta:focus-visible { outline: 3px solid #ff6482; outline-offset: 3px; }
+    .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 24px 0; padding: 0; }
+    .shots figure { margin: 0; }
+    .shots img { display: block; width: 100%; height: auto; border: 1px solid #3a3a3c; border-radius: 16px; }
+    .shots figcaption { margin-top: 8px; color: #aeaeb2; font-size: .9rem; line-height: 1.5; }
     .cards { display: grid; gap: 12px; margin: 24px 0; }
-    .card { padding: 16px; border: 1px solid #3a3a3c; border-radius: 14px; background: #1c1c1e; }
-    .card strong { display: block; color: #fff; }
+    .card { padding: 16px; border: 1px solid #3a3a3c; border-radius: 16px; background: #1c1c1e; }
+    .card h3 { margin: 0; color: #fff; font-size: 1rem; line-height: 1.6; }
+    .card p { margin: 0; }
+    .tag { display: inline-block; margin-left: 8px; padding: 0 8px; border-radius: 12px; font-size: .75rem; font-weight: 700; line-height: 1.7; vertical-align: 2px; }
+    .tag.premium { background: #ff375f; color: #000; }
+    .tag.free { background: #2c2c2e; color: #f2f2f7; }
+    .help { margin: 12px 0 0; font-size: .95rem; }
+    .card.lead { border-color: #ff375f; }
     details { border-bottom: 1px solid #2c2c2e; padding: 12px 0; }
     summary { cursor: pointer; font-weight: 700; }
-    summary:focus-visible, a:focus-visible { outline: 3px solid #FF375F; outline-offset: 3px; }
+    summary:focus-visible, a:focus-visible { outline: 3px solid #ff375f; outline-offset: 3px; }
     a { color: #ff6482; }
     nav { display: grid; gap: 12px; margin: 16px 0; }
     nav a { display: block; padding: 14px 16px; border: 1px solid #3a3a3c; border-radius: 14px; background: #1c1c1e; color: #f2f2f7; font-weight: 700; text-decoration: none; }
@@ -31,37 +100,60 @@
   </style>
 </head>
 <body>
+  <a class="skip" href="#features">本文へ移動</a>
   <main>
     <header>
-      <img src="icon.png" alt="カラダナビのアイコン">
-      <div>
-        <h1>カラダナビ</h1>
-        <p class="tagline">考えなくていい、毎日の運動プラン</p>
-      </div>
+      <img src="icon.png" alt="カラダナビのアイコン" width="72" height="72">
+      <h1>
+        <span class="brand">カラダナビ</span>
+        <span class="lead">今日の運動と散歩ルート｜iPhone アプリ</span>
+      </h1>
     </header>
 
-    <p>「何を・どれだけ・どこで」運動するかを、アプリが毎日決めます。自分でプランを立てるのが苦手な人、歩くルートを考えるのが面倒な人のための運動アプリです。</p>
+    <p>開くだけで今日の運動と散歩ルートが決まる運動アプリです。「何を・どれだけ・どこで」運動するかを、アプリが毎日決めます。自分でプランを立てるのが苦手な人、歩くルートを考えるのが面倒な人のためのアプリです。</p>
+    <p class="premise">iPhone だけで使えます。Apple Watch は、お持ちの場合に調子の判定がより細かくなる任意の連携です。</p>
 
-    <div class="cards">
-      <div class="card"><strong>開くだけで、今日のメニュー</strong>これまでの運動の記録とヘルスケアの睡眠から、その日の量を調整します。Apple Watch があれば、心拍や皮膚温も加えてより細かく判定します。</div>
-      <div class="card"><strong>目標から逆算した、今週のプラン</strong>目標体重とペースを決めると、今週の有酸素運動の時間と筋トレの回数を計算します。</div>
-      <div class="card"><strong>散歩ルートと天気</strong>今日の天気から歩ける時間を判定し、近くの公園を通って戻るルートを提案します。雨の日は家でできるメニューに切り替えます。</div>
+    <p class="help">お困りの方は：<a href="#faq">よくある質問</a>・<a href="#contact">お問い合わせ</a></p>
+
+    <a class="cta" data-link-location="hero" href="https://apps.apple.com/jp/app/id6816589095?pt=112300832&amp;ct=support&amp;mt=8">App Store で入手する</a>
+    <p class="muted">iPhone（iOS 27 以降）で使えます。ダウンロードは無料で、記録・履歴・3D の種目解説・体重のグラフは無料で使えます。今日のおすすめ・週のプラン・天気と散歩ルートはプレミアム（月額480円または年額3,800円。日本の価格）です。初めての方は1か月無料（購入画面に表示された場合）。</p>
+
+    <div class="shots">
+      <figure>
+        <img src="screen-today.png" width="550" height="1000" loading="lazy" alt="カラダナビの「今日」の画面。今日のおすすめの早歩き25分と、準備度、開始ボタン">
+        <figcaption>今日の運動が決まる（プレミアム）</figcaption>
+      </figure>
+      <figure>
+        <img src="screen-route.png" width="550" height="1000" loading="lazy" alt="カラダナビの散歩ルートの画面。天気と、公園を通る約1.7kmの地図ルート">
+        <figcaption>天気に合わせた散歩ルート（プレミアム）</figcaption>
+      </figure>
     </div>
+    <p class="muted">画面はイメージです（デモ表示。実際の表示は、お使いの状況や iOS のバージョンで異なります）。</p>
+
+    <h2 id="features">カラダナビでできること</h2>
+    <div class="cards">
+      <div class="card lead"><h3>開くだけで、今日の運動が決まる<span class="tag premium">プレミアム</span></h3><p>これまでの運動の記録とヘルスケアの睡眠から、その日の量を調整します。入力は要りません。Apple Watch があれば、心拍や皮膚温も加えて、より細かく判定します。無料版では、曜日ごとの基本メニューを表示します。</p></div>
+      <div class="card"><h3>歩くルートも、天気も、おまかせ<span class="tag premium">プレミアム</span></h3><p>今日の天気から歩ける時間を判定し、近くの公園を通って戻るルートを提案します。雨の日は、家でできるメニューに切り替えます。</p></div>
+      <div class="card"><h3>目標から逆算した、今週のプラン<span class="tag premium">プレミアム</span></h3><p>目標体重とペースを決めると、今週の有酸素運動の時間と筋トレの回数を計算します。</p></div>
+      <div class="card"><h3>目標まで、あと何週かが分かる<span class="tag premium">プレミアム</span></h3><p>目標までのカウントダウンで、進み具合がひと目で分かります。体重のグラフは無料版でも使えます。</p></div>
+      <div class="card"><h3>動きは3Dで、ひと目で分かる<span class="tag free">無料</span></h3><p>種目の動きを3Dで確認でき、効いている筋肉も色で表示します。</p></div>
+    </div>
+    <p class="muted">運動と散歩のためのアプリです。食事の記録や写真の解析は行いません（食事の目安は、一般的な計算で表示します）。</p>
 
     <h2>動作環境</h2>
     <ul>
       <li>iPhone（iOS 27 以降）。Apple Watch がなくても使えます</li>
-      <li>Apple Watch（watchOS 27 以降）はあればより便利です（記録・心拍の表示、調子の判定の精度）</li>
+      <li>Apple Watch（watchOS 27 以降）は、あればより便利です（記録・心拍の表示、調子の判定の精度）</li>
     </ul>
 
-    <h2>よくある質問</h2>
+    <h2 id="faq">よくある質問</h2>
     <details>
       <summary>Apple Watch がなくても使えますか？</summary>
       <p>使えます。今日のメニュー、週のプラン、散歩ルート、記録は iPhone だけで使えます。調子の判定は、Apple Watch がない場合、これまでの運動の記録とヘルスケアの睡眠をもとに行います。</p>
     </details>
     <details>
       <summary>無料で使える範囲と、プレミアムの違いは？</summary>
-      <p>無料版では、記録・履歴、3D の種目解説、曜日ごとの基本メニュー、体重のグラフが使えます。プレミアム（日本の価格で月額480円・年額3,800円。初めての方は1か月の無料体験つき）では、調子に合わせた今日のおすすめ、目標から逆算した週のプラン、天気と散歩ルート、雨の日の自動切り替えが使えます。</p>
+      <p>無料版では、記録・履歴、3D の種目解説、曜日ごとの基本メニュー、体重のグラフが使えます。プレミアム（月額480円または年額3,800円。日本の価格）では、調子に合わせた今日のおすすめ、目標から逆算した週のプランと目標までのカウントダウン、天気と散歩ルート、雨の日の自動切り替えが使えます。初めての方は1か月無料です（購入画面に表示された場合）。</p>
     </details>
     <details>
       <summary>解約するには？</summary>
@@ -73,7 +165,7 @@
     </details>
     <details>
       <summary>健康データはどこかに送られますか？</summary>
-      <p>送りません。健康データは端末の中だけで扱います。天気と散歩ルートのために、現在地だけを Apple のサービス（WeatherKit・マップ）に送ります。広告や解析のツールは入っていません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+      <p>アプリは、健康データを端末の中だけで扱い、外部に送りません。天気と散歩ルートのために、現在地だけを Apple のサービス（WeatherKit・マップ）に送ります。アプリには広告や解析のツールは入っていません。なお、このサポートサイト自体は、閲覧状況の把握に Google アナリティクスを使っています（アプリとは別です）。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
     </details>
     <details>
       <summary>ヘルスケアのデータが表示されません</summary>
@@ -85,10 +177,12 @@
     </details>
     <details>
       <summary>運動してよいか不安です</summary>
-      <p>カラダナビは医療機器ではなく、診断や治療を目的としたものではありません。持病のある方や運動に不安のある方は、始める前に医師にご相談ください。運動中に胸の痛み・めまい・息苦しさなどを感じたら、すぐに中止してください。</p>
+      <p>カラダナビは医療機器ではなく、医師の診断や判断の代わりになるものではありません。持病のある方や運動に不安のある方は、始める前に医師にご相談ください。運動中に胸の痛み・めまい・息苦しさなどを感じたら、すぐに中止してください。</p>
     </details>
 
-    <h2>お問い合わせ</h2>
+    <a class="cta" data-link-location="footer" href="https://apps.apple.com/jp/app/id6816589095?pt=112300832&amp;ct=support&amp;mt=8">App Store で入手する</a>
+
+    <h2 id="contact">お問い合わせ</h2>
     <p>ご意見・不具合のご報告は、メールでお送りください。</p>
     <p>運営者：カラダナビ運営事務局<br>メール：<a href="mailto:karadanavi.support@gmail.com">karadanavi.support@gmail.com</a></p>
 
@@ -97,7 +191,20 @@
       <a href="terms.html">利用規約</a>
       <a href="privacy.html">プライバシーポリシー</a>
     </nav>
-    <p class="muted">最終更新日：2026年9月29日</p>
+    <p class="muted">このサイトは、閲覧状況の把握に Google アナリティクスを使っています（アプリとは別です）。詳しくは<a href="privacy.html">プライバシーポリシー</a>の第8項をご覧ください。</p>
+    <p class="muted">最終更新日：2026年10月11日</p>
   </main>
+
+  <script>
+    // App Store へのリンクのクリックを GA4 に送る（ページを離れても届くよう beacon を使う）
+    document.addEventListener('click', function (event) {
+      var link = event.target.closest('a[data-link-location]');
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'app_store_click', {
+        link_location: link.getAttribute('data-link-location'),
+        transport_type: 'beacon'
+      });
+    });
+  </script>
 </body>
 </html>
